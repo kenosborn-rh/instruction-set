@@ -24,6 +24,8 @@ network --bootproto=static --device=link --ip=10.20.0.99 --netmask=255.255.255.0
 %post --log=/var/log/anaconda/post-install.log --erroronfail
 
 # Local user for console login and SSH (TESTING PURPOSES ONLY)
+# For production, injecting an ssh key would be preferred and we can
+# assist with this if needed/desired
 useradd -g wheel redhat
 echo "redhat:redhat123" | chpasswd
 mkdir /home/redhat/.ssh
