@@ -4,7 +4,7 @@ set -euo pipefail
 # Usage:
 #   sudo ./setup-network.sh <iface> <ip[/cidr]> <gateway> [dns1,dns2,...]
 # Example:
-#   sudo ./setup-network.sh ens18 10.20.0.95 10.20.0.1 8.8.8.8,8.8.4.4
+#   sudo ./setup-network.sh enp1s0 10.20.0.95 10.20.0.1 8.8.8.8,8.8.4.4
 
 DEFAULT_CIDR="24"
 
